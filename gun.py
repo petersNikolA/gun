@@ -56,7 +56,7 @@ class Ball:
         """
         drawing balls in a new location
         """
-        circle(screen, self.color, (self.x, self.y), self.r)
+        circle(screen, self.color, (int(self.x), int(self.y)), self.r)
 
     def move(self, dt):
         """moving of ball
@@ -191,7 +191,7 @@ class Target:
         """
         drawing of target
         """
-        circle(screen, self.color, (self.x, self.y), self.r)
+        circle(screen, self.color, (int(self.x), int(self.y)), self.r)
 
     def move(self, dt):
         """
